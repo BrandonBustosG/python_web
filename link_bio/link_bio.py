@@ -1,4 +1,5 @@
 import reflex as rx
+from component.navbar import navbar
 
 
 class State(rx.State):
@@ -6,9 +7,10 @@ class State(rx.State):
 
 
 def index() -> rx.Component:
-    return rx.text("Hola Reflex!", color="blue")
+    return rx.vstack(
+        navbar()
+    )
 
 
 app = rx.App()
 app.add_page(index)
-app.compile()
