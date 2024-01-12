@@ -1,5 +1,7 @@
 import reflex as rx
 from link_bio.styles.styles import Size as Size
+from link_bio.styles.colors import Color as Color
+from link_bio.styles.colors import TextColor as TexColor
 
 
 def info_text(title: str, body: str) -> rx.Component:
@@ -7,8 +9,9 @@ def info_text(title: str, body: str) -> rx.Component:
         rx.span(
             title,
             font_weight="bold",
-            color="blue"
+            color=Color.PRIMARY.value
         ),
         f" {body}",
-        font_size=Size.MEDIUM.value
+        font_size=Size.MEDIUM.value,
+        color=TexColor.BODY.value
     )

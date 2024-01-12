@@ -1,7 +1,9 @@
 import reflex as rx
-from link_bio.components.link_icon import link_icon
-from link_bio.styles.styles import Size as Size
+
 from link_bio.components.info_text import info_text
+from link_bio.components.link_icon import link_icon
+from link_bio.styles.colors import TextColor as TexColor
+from link_bio.styles.styles import Size as Size
 
 
 def header() -> rx.Component:
@@ -11,11 +13,13 @@ def header() -> rx.Component:
             rx.vstack(
                 rx.text(
                     "Brandon Bustos",
-                    size="lg"
+                    size="lg",
+                    color=TexColor.HEADER.value
                 ),
                 rx.text(
                     "@lineasdecodigo",
-                    margin_top="0px ! important"
+                    margin_top=Size.ZERO.value,
+                    color=TexColor.BODY.value
                 ),
                 rx.hstack(
                     link_icon("https://x.com/brandonbustos"),
@@ -34,11 +38,14 @@ def header() -> rx.Component:
             info_text("+2", "años de experiencia"),
             width="100%"
         ),
-        rx.text("""
-                Soy tecnologo en sistemas y desarrolladore de software desde hace 3 años, Trabajo con lenguajes de 
-                programacion como C#, Python y Java.
-                Bienvenid@!!
-                """),
+        rx.text(
+            """
+            Soy tecnologo en sistemas y desarrolladore de software desde hace 3 años, Trabajo con lenguajes de 
+            programacion como C#, Python y Java.
+            Bienvenid@!!
+            """,
+            color=TexColor.BODY.value
+        ),
         spacing=Size.BIG.value,
         align_items="start"
     )
