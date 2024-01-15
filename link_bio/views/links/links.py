@@ -10,34 +10,40 @@ def links() -> rx.Component:
         link_button(
             "Youtube",
             "canal principal",
-            "https://reflex.dev"
+            "https://reflex.dev",
+            "icons/youtube.svg"
         ),
         link_button(
             "Instagram",
             "informacion de proyectos y contenido",
-            "https://reflex.dev"
+            "https://reflex.dev",
+            "icons/youtube.svg"
         ),
         link_button(
             "Discord",
             "chat de la comunidad",
-            "https://reflex.dev"
+            "https://reflex.dev",
+            "icons/youtube.svg"
         ),
         link_button(
             "Telegram",
             "Compartir contenido",
-            "https://reflex.dev"
+            "https://reflex.dev",
+            "icons/youtube.svg"
         ),
         title("Recursos"),
         link_button(
             "Youtube",
             "canal principal",
-            "https://reflex.dev"
+            "https://reflex.dev",
+            "icons/youtube.svg"
         ),
         title("Contactos"),
         link_button(
             "Youtube",
             "canal principal",
-            "https://reflex.dev"
+            "https://reflex.dev",
+            "icons/youtube.svg"
         ),
         width="100%",
         spacing=Size.MEDIUM.value

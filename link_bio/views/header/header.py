@@ -3,19 +3,25 @@ import reflex as rx
 from link_bio.components.info_text import info_text
 from link_bio.components.link_icon import link_icon
 from link_bio.styles.colors import TextColor as TexColor
+from link_bio.styles.colors import Color as Color
 from link_bio.styles.styles import Size as Size
 
 
 def header() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(name="Brandon Bustos", size="xl"),
+            rx.avatar(
+                name="Brandon Bustos",
+                size="xl",
+                src="",
+                color=TexColor.BODY.value,
+                bg=Color.CONTENT.value,
+                padding="2px",
+                border="4px",
+                border_color=Color.PRIMARY.value
+            ),
             rx.vstack(
-                rx.text(
-                    "Brandon Bustos",
-                    size="lg",
-                    color=TexColor.HEADER.value
-                ),
+                rx.heading("Brandon Bustos"),
                 rx.text(
                     "@lineasdecodigo",
                     margin_top=Size.ZERO.value,
@@ -44,7 +50,8 @@ def header() -> rx.Component:
             programacion como C#, Python y Java.
             Bienvenid@!!
             """,
-            color=TexColor.BODY.value
+            color=TexColor.BODY.value,
+            font_size=Size.DEFAULT.value
         ),
         spacing=Size.BIG.value,
         align_items="start"
