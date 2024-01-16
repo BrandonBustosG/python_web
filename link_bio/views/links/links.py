@@ -9,7 +9,7 @@ def links() -> rx.Component:
         title("Comunidad"),
         link_button(
             "Youtube",
-            "canal principal",
+            "canal principal, videos de programacion",
             "https://reflex.dev",
             "icons/youtube.svg"
         ),

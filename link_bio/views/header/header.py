@@ -13,7 +13,7 @@ def header() -> rx.Component:
             rx.avatar(
                 name="Brandon Bustos",
                 size="xl",
-                src="",
+                src="logo.png",
                 color=TexColor.BODY.value,
                 bg=Color.CONTENT.value,
                 padding="2px",

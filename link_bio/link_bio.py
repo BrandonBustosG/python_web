@@ -7,8 +7,8 @@ from link_bio.styles import styles
 from link_bio.styles.styles import Size as Size
 
 
-class State(rx.State):
-    pass
+#class State(rx.State):
+#    pass
 
 
 def index() -> rx.Component:
@@ -28,6 +28,7 @@ def index() -> rx.Component:
 
 
 app = rx.App(
+    stylesheets= styles.STYLESSHEETS,
     style=styles.BASE_STYLE
 )
 app.add_page(index)

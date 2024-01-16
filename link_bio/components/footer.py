@@ -8,7 +8,7 @@ from link_bio.styles.colors import TextColor as TexColor
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src="favicon.ico",
+            src="logo_perfil.png",
         ),
         rx.link(
             f"©️ {datetime.date.today().year} BRANDON BUSTOS V1.",
@@ -23,6 +23,7 @@ def footer() -> rx.Component:
         ),
         margin_bottom=Size.BIG.value,
         padding_bottom=Size.BIG.value,
+        padding_y=Size.BIG.value,
         padding_x=Size.BIG.value,
         spacing=Size.DEFAULT.value,
         color=TexColor.FOOTER.value
